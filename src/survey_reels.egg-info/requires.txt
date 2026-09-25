@@ -1,0 +1,10 @@
+numpy
+
+[dev]
+pytest
+pyyaml
+
+[peers]
+survey-currents
+survey-flow
+survey-animate

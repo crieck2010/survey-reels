@@ -1,0 +1,2 @@
+[console_scripts]
+reels = reels.cli:main

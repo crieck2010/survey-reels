@@ -1,0 +1,16 @@
+name: lake-michigan-week
+source: noaa-ofs
+ofs_code: LMHOFS
+cycle: "00"
+hours: [0, 6, 12, 18, 24, 30, 36, 42]
+bbox: [-87.9, 41.6, -86.7, 42.9]
+n_frames: 48
+flow_style: reel-dark
+flow_size: reel
+n_particles: 1500
+seed: 7
+animate_preset: reel
+fps: 30.0
+title: "Lake Michigan surface currents"
+subtitle: "NOAA LMHOFS model · colored by water temperature"
+output: lake-michigan-reel.mp4

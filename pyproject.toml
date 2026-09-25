@@ -1,0 +1,32 @@
+[project]
+name = "survey-reels"
+version = "0.1.0"
+description = "Thin orchestration engine for mapped.earth-style animated current/temperature reels"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Charles Rieck", email = "crieck2010@users.noreply.github.com" }]
+keywords = ["remote-sensing", "ocean-currents", "animation", "reels", "earthwatch"]
+dependencies = ["numpy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+
+[project.optional-dependencies]
+peers = ["survey-currents", "survey-flow", "survey-animate"]
+dev = ["pytest", "pyyaml"]
+
+[project.scripts]
+reels = "reels.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
